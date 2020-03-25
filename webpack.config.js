@@ -16,10 +16,10 @@ const rules = [
 ];
 
 module.exports = {
-  entry: path.join(__dirname, 'src', 'index.tsx'),
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
     filename: 'bundel.js',
-    path: path.resolve(__dirname, './build')
+    path: path.resolve(__dirname, 'build')
   },
   module: {
     rules
